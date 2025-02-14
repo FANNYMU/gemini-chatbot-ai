@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  
+  :root[class~="dark"] {
+    color-scheme: dark;
+  }
+}
+
+/* Import highlight.js theme */
+@import 'highlight.js/styles/github.css';
+.dark .hljs {
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.5);
+}
+
+/* Markdown content styles */
+.prose pre {
+  background: #f6f8fa;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.dark .prose pre {
+  background: #1e1e1e;
+}
+
+.prose code:not(pre code) {
+  background: #f6f8fa;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.dark .prose code:not(pre code) {
+  background: #1e1e1e;
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
