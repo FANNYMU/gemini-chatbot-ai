@@ -21,7 +21,7 @@ Sebelum memulai, pastikan Anda telah menginstal:
 
 1. Clone repositori ini:
 ```bash
-git clone [url-repositori-anda]
+https://github.com/FANNYMU/gemini-chatbot-ai.git
 cd zyra-beta
 ```
 
@@ -72,7 +72,7 @@ Proyek ini bersifat private dan tidak untuk didistribusikan.
 
 ## ✨ Kontributor
 
-- [Nama Anda]
+- Chandra K.A
 
 ---
 Dibuat dengan ❤️ menggunakan React + TypeScript + Vite 
